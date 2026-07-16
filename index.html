@@ -1,262 +1,312 @@
-<!DOCTYPE html>
-
-<html lang="es">
+<!doctype html>
+<html lang="es-AR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mi Tarot</title>
-
-<style>
-:root{
-    --bg:#0f0f13;
-    --card:#1a1b22;
-    --accent:#b38cff;
-    --text:#f5f5f7;
-    --muted:#b8b8c2;
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sitio oficial de Mi Tarot: información de la aplicación, soporte y documentos legales.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#15111f">
+  <title>Mi Tarot</title>
+  <style>
+:root {
+  color-scheme: dark;
+  --bg: #100d17;
+  --surface: #181321;
+  --surface-soft: #211a2d;
+  --text: #f5f0fa;
+  --muted: #c9bfd3;
+  --accent: #d6b86a;
+  --accent-strong: #eed58d;
+  --border: rgba(255, 255, 255, 0.12);
+  --max-width: 960px;
 }
-
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(101, 70, 141, 0.16), transparent 34rem),
+    var(--bg);
+  color: var(--text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  line-height: 1.7;
 }
-
-body{
-    font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-    background:var(--bg);
-    color:var(--text);
-    line-height:1.7;
+a {
+  color: var(--accent-strong);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
 }
-
-header{
-    padding:80px 24px;
-    text-align:center;
+a:hover, a:focus-visible { color: #fff1b7; }
+header.site-header {
+  border-bottom: 1px solid var(--border);
+  background: rgba(16, 13, 23, 0.92);
+  backdrop-filter: blur(12px);
 }
-
-header h1{
-    font-size:3rem;
-    margin-bottom:16px;
+.header-inner, main, footer {
+  width: min(calc(100% - 2rem), var(--max-width));
+  margin-inline: auto;
 }
-
-header p{
-    max-width:700px;
-    margin:auto;
-    color:var(--muted);
+.header-inner { padding: 1.35rem 0; }
+.brand {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  color: var(--text);
+  text-decoration: none;
 }
-
-nav{
-    position:sticky;
-    top:0;
-    background:#111218;
-    border-bottom:1px solid #252733;
-    padding:16px;
-    text-align:center;
+.brand strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.65rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
-
-nav a{
-    color:var(--accent);
-    text-decoration:none;
-    margin:0 16px;
-    font-weight:600;
+.brand span { color: var(--muted); font-size: 0.9rem; }
+nav.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem 1.25rem;
+  margin-top: 1rem;
 }
-
-section{
-    max-width:900px;
-    margin:auto;
-    padding:60px 24px;
+nav.main-nav a { color: var(--muted); text-decoration: none; }
+nav.main-nav a[aria-current="page"] { color: var(--accent-strong); }
+main { padding: 3.5rem 0 5rem; }
+.hero { padding: 1.25rem 0 2rem; }
+.eyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
-
-.card{
-    background:var(--card);
-    padding:32px;
-    border-radius:16px;
-    margin-bottom:24px;
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.25;
+  text-wrap: balance;
 }
-
-h2{
-    margin-bottom:20px;
+h1 {
+  margin: 0;
+  font-size: clamp(2.35rem, 7vw, 4.2rem);
+  font-weight: 600;
 }
-
-h3{
-    margin-top:24px;
-    margin-bottom:12px;
+h2 { margin: 0 0 1rem; font-size: clamp(1.45rem, 4vw, 2rem); }
+h3 { margin: 1.5rem 0 0.6rem; font-size: 1.2rem; }
+p, li { color: var(--muted); }
+strong { color: var(--text); }
+.lead { max-width: 760px; font-size: 1.08rem; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
 }
-
-p, li{
-    color:var(--muted);
+.card {
+  padding: 1.35rem;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: var(--surface);
 }
-
-ul{
-    padding-left:20px;
+.card h2, .card h3 { margin-top: 0; }
+.card-link {
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 150ms ease, border-color 150ms ease;
 }
-
-footer{
-    text-align:center;
-    padding:40px 20px;
-    border-top:1px solid #252733;
-    color:var(--muted);
+.card-link:hover, .card-link:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(238, 213, 141, 0.55);
 }
-
-.email{
-    color:var(--accent);
-    text-decoration:none;
+.card-link p { margin-bottom: 0; }
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.4rem;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 0.7rem;
+  color: #17111f;
+  background: var(--accent-strong);
+  font-weight: 700;
+  text-decoration: none;
+}
+.button.secondary {
+  color: var(--accent-strong);
+  background: transparent;
+}
+.section {
+  margin-top: 3rem;
+}
+.notice {
+  margin: 1.5rem 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(214, 184, 106, 0.36);
+  border-radius: 0.9rem;
+  background: rgba(214, 184, 106, 0.10);
+}
+.notice p { margin: 0; }
+.steps {
+  counter-reset: step;
+  list-style: none;
+  padding: 0;
+}
+.steps li {
+  position: relative;
+  padding: 0 0 1.2rem 3rem;
+}
+.steps li::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0.05rem;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--surface-soft);
+  color: var(--accent-strong);
+  font-weight: 700;
+}
+address {
+  margin: 1rem 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+  background: var(--surface);
+  color: var(--muted);
+  font-style: normal;
+}
+footer {
+  padding: 1.5rem 0 3rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+@media (max-width: 720px) {
+  .grid { grid-template-columns: 1fr; }
+  main { padding-top: 2.5rem; }
 }
 </style>
-
 </head>
-
 <body>
+  <header class="site-header" id="inicio">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-current="page">
+        <strong>Mi Tarot</strong>
+        <span>Reflexión personal y exploración simbólica</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="index.html" aria-current="page">Inicio</a>
+        <a href="privacy.html">Privacidad</a>
+        <a href="terms.html">Términos</a>
+        <a href="delete-data.html">Eliminar datos</a>
+        <a href="#soporte">Soporte</a>
+      </nav>
+    </div>
+  </header>
 
-<header>
-    <h1>Mi Tarot</h1>
-    <p>
-        Una experiencia de tarot diseñada para la reflexión personal,
-        el autoconocimiento y la exploración simbólica.
-    </p>
-</header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Aplicación móvil</p>
+      <h1>Mi Tarot</h1>
+      <p class="lead">
+        Una experiencia de tarot diseñada para la reflexión personal, el
+        autoconocimiento y la exploración simbólica, con lecturas manuales y
+        herramientas de interpretación asistidas por inteligencia artificial.
+      </p>
+      <div class="actions">
+        <a class="button" href="#documentos">Ver información legal</a>
+        <a class="button secondary" href="mailto:contacto@mitarot.app">Contactar soporte</a>
+      </div>
+    </section>
 
-<nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#privacidad">Privacidad</a>
-    <a href="#soporte">Soporte</a>
-</nav>
+    <section class="section">
+      <div class="card">
+        <h2>Sobre la aplicación</h2>
+        <p>
+          Mi Tarot permite consultar la Carta del Día, realizar diferentes
+          tiradas, registrar lecturas y reflexiones en el Diario, acceder al
+          Compendio y obtener interpretaciones guiadas mediante inteligencia
+          artificial.
+        </p>
+        <p>
+          Las lecturas tienen fines recreativos, simbólicos y de reflexión
+          personal. No constituyen asesoramiento médico, psicológico, jurídico,
+          financiero ni profesional.
+        </p>
+      </div>
+    </section>
 
-<section id="inicio">
+    <section class="section" id="documentos">
+      <p class="eyebrow">Documentación</p>
+      <h2>Información legal y privacidad</h2>
 
-```
-<div class="card">
-    <h2>Bienvenido a Mi Tarot</h2>
-
-    <p>
-        Mi Tarot es una aplicación móvil que permite realizar lecturas
-        de tarot, consultar la carta del día, registrar reflexiones
-        personales y acceder a interpretaciones asistidas por inteligencia
-        artificial.
-    </p>
-
-    <br>
-
-    <p>
-        Las interpretaciones ofrecidas tienen fines recreativos y de
-        reflexión personal. No constituyen asesoramiento médico,
-        psicológico, financiero, legal ni profesional de ningún tipo.
-    </p>
-
-    <br>
-
-    <p>
-        Desarrollado por <strong>Iterative Paths</strong>.
-    </p>
-</div>
-```
-
-</section>
-
-<section id="privacidad">
-
-```
-<div class="card">
-
-    <h2>Política de Privacidad</h2>
-
-    <p>
-        Última actualización: Junio de 2026
-    </p>
-
-    <h3>Información procesada</h3>
-
-    <p>
-        Mi Tarot puede procesar información necesaria para brindar sus
-        funcionalidades, incluyendo preferencias de usuario, configuraciones,
-        contenido ingresado para interpretaciones y datos técnicos necesarios
-        para anuncios, suscripciones y funcionamiento del servicio.
-    </p>
-
-    <h3>Uso de la información</h3>
-
-    <ul>
-        <li>Proporcionar funcionalidades de la aplicación.</li>
-        <li>Generar interpretaciones solicitadas por el usuario.</li>
-        <li>Gestionar suscripciones y compras.</li>
-        <li>Mostrar anuncios cuando corresponda.</li>
-        <li>Mejorar estabilidad y rendimiento.</li>
-    </ul>
-
-    <h3>Almacenamiento</h3>
-
-    <p>
-        Las notas y registros personales se almacenan principalmente
-        en el dispositivo del usuario.
-    </p>
-
-    <h3>Servicios de terceros</h3>
-
-    <ul>
-        <li>Google Play Billing.</li>
-        <li>Google AdMob.</li>
-        <li>Servicios de inteligencia artificial.</li>
-        <li>Servicios de infraestructura y análisis.</li>
-    </ul>
-
-    <h3>Menores de edad</h3>
-
-    <p>
-        La aplicación no está dirigida específicamente a menores de 13 años.
-    </p>
-
-    <h3>Seguridad</h3>
-
-    <p>
-        Se implementan medidas razonables para proteger la información
-        utilizada por la aplicación.
-    </p>
-
-    <h3>Cambios a esta política</h3>
-
-    <p>
-        Esta política podrá actualizarse periódicamente.
-        Las modificaciones se publicarán en esta misma página.
-    </p>
-
-</div>
-```
-
-</section>
-
-<section id="soporte">
-
-```
-<div class="card">
-
-    <h2>Soporte</h2>
-
-    <p>
-        Si tienes preguntas o necesitas asistencia con Mi Tarot,
-        puedes contactarnos por correo electrónico.
-    </p>
-
-    <br>
-
-    <p>
-        <a class="email" href="mailto:contacto@mitarot.app">
-            contacto@mitarot.app
+      <div class="grid">
+        <a class="card card-link" href="privacy.html">
+          <h3>Política de Privacidad</h3>
+          <p>
+            Explica qué información procesa Mi Tarot, cómo intervienen la
+            inteligencia artificial, Firebase, AdMob y Google Play, y cómo
+            ejercer derechos sobre los datos.
+          </p>
         </a>
-    </p>
 
-    <br>
+        <a class="card card-link" href="terms.html">
+          <h3>Términos de Uso</h3>
+          <p>
+            Regula el uso de la aplicación, las lecturas, Premium, suscripciones,
+            anuncios recompensados, propiedad intelectual y limitaciones del servicio.
+          </p>
+        </a>
 
-    <p>
-        Desarrollador: <strong>Iterative Paths</strong>
-    </p>
+        <a class="card card-link" href="delete-data.html">
+          <h3>Eliminación de Datos</h3>
+          <p>
+            Detalla cómo eliminar la cuenta anónima, el historial local y los
+            datos asociados, y qué información puede conservarse legalmente.
+          </p>
+        </a>
 
-</div>
-```
+        <a class="card card-link" href="mailto:contacto@mitarot.app">
+          <h3>Soporte y contacto</h3>
+          <p>
+            Canal para consultas técnicas, privacidad, reclamos o solicitudes
+            relacionadas con la cuenta y la suscripción.
+          </p>
+        </a>
+      </div>
+    </section>
 
-</section>
+    <section class="section" id="soporte">
+      <div class="card">
+        <h2>Soporte</h2>
+        <p>
+          Para solicitar asistencia, informar un problema o realizar una
+          consulta sobre privacidad:
+        </p>
+        <address>
+          Correo:
+          <a href="mailto:contacto@mitarot.app">contacto@mitarot.app</a><br>
+          Desarrollador: <strong>Iterative Paths</strong>
+        </address>
+      </div>
+    </section>
+  </main>
 
-<footer>
+  <footer>
     © 2026 Iterative Paths · Mi Tarot
-</footer>
-
+  </footer>
 </body>
 </html>
