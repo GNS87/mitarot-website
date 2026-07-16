@@ -1,94 +1,383 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="es-AR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eliminación de Datos - Mi Tarot</title>
-
-<style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Instrucciones para eliminar la cuenta y los datos asociados a Mi Tarot.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#15111f">
+  <title>Eliminación de Datos | Mi Tarot</title>
+  <style>
+:root {
+  color-scheme: dark;
+  --bg: #100d17;
+  --surface: #181321;
+  --surface-soft: #211a2d;
+  --text: #f5f0fa;
+  --muted: #c9bfd3;
+  --accent: #d6b86a;
+  --accent-strong: #eed58d;
+  --border: rgba(255, 255, 255, 0.12);
+  --max-width: 960px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 body {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    font-family: Arial, sans-serif;
-    line-height: 1.7;
-    color: #333;
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(101, 70, 141, 0.16), transparent 34rem),
+    var(--bg);
+  color: var(--text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  line-height: 1.7;
 }
-
-h1, h2 {
-    color: #5B3A8E;
-}
-
 a {
-    color: #5B3A8E;
+  color: var(--accent-strong);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+a:hover, a:focus-visible { color: #fff1b7; }
+header.site-header {
+  border-bottom: 1px solid var(--border);
+  background: rgba(16, 13, 23, 0.92);
+  backdrop-filter: blur(12px);
+}
+.header-inner, main, footer {
+  width: min(calc(100% - 2rem), var(--max-width));
+  margin-inline: auto;
+}
+.header-inner { padding: 1.35rem 0; }
+.brand {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  color: var(--text);
+  text-decoration: none;
+}
+.brand strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.65rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.brand span { color: var(--muted); font-size: 0.9rem; }
+nav.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem 1.25rem;
+  margin-top: 1rem;
+}
+nav.main-nav a { color: var(--muted); text-decoration: none; }
+nav.main-nav a[aria-current="page"] { color: var(--accent-strong); }
+main { padding: 3.5rem 0 5rem; }
+.hero { padding: 1.25rem 0 2rem; }
+.eyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+h1 {
+  margin: 0;
+  font-size: clamp(2.35rem, 7vw, 4.2rem);
+  font-weight: 600;
+}
+h2 { margin: 0 0 1rem; font-size: clamp(1.45rem, 4vw, 2rem); }
+h3 { margin: 1.5rem 0 0.6rem; font-size: 1.2rem; }
+p, li { color: var(--muted); }
+strong { color: var(--text); }
+.lead { max-width: 760px; font-size: 1.08rem; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.card {
+  padding: 1.35rem;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: var(--surface);
+}
+.card h2, .card h3 { margin-top: 0; }
+.card-link {
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 150ms ease, border-color 150ms ease;
+}
+.card-link:hover, .card-link:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(238, 213, 141, 0.55);
+}
+.card-link p { margin-bottom: 0; }
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.4rem;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 0.7rem;
+  color: #17111f;
+  background: var(--accent-strong);
+  font-weight: 700;
+  text-decoration: none;
+}
+.button.secondary {
+  color: var(--accent-strong);
+  background: transparent;
+}
+.section {
+  margin-top: 3rem;
+}
+.notice {
+  margin: 1.5rem 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(214, 184, 106, 0.36);
+  border-radius: 0.9rem;
+  background: rgba(214, 184, 106, 0.10);
+}
+.notice p { margin: 0; }
+.steps {
+  counter-reset: step;
+  list-style: none;
+  padding: 0;
+}
+.steps li {
+  position: relative;
+  padding: 0 0 1.2rem 3rem;
+}
+.steps li::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0.05rem;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--surface-soft);
+  color: var(--accent-strong);
+  font-weight: 700;
+}
+address {
+  margin: 1rem 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+  background: var(--surface);
+  color: var(--muted);
+  font-style: normal;
+}
+footer {
+  padding: 1.5rem 0 3rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+@media (max-width: 720px) {
+  .grid { grid-template-columns: 1fr; }
+  main { padding-top: 2.5rem; }
 }
 </style>
 </head>
 <body>
+  <header class="site-header" id="inicio">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <strong>Mi Tarot</strong>
+        <span>Reflexión personal y exploración simbólica</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="privacy.html">Privacidad</a>
+        <a href="terms.html">Términos</a>
+        <a href="delete-data.html" aria-current="page">Eliminar datos</a>
+        <a href="mailto:contacto@mitarot.app">Soporte</a>
+      </nav>
+    </div>
+  </header>
 
-<h1>Solicitud de Eliminación de Datos</h1>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Privacidad</p>
+      <h1>Eliminación de Datos</h1>
+      <p class="lead">
+        Mi Tarot permite eliminar la cuenta técnica anónima, la información
+        asociada en el backend y los datos almacenados localmente en el dispositivo.
+      </p>
+      <p><strong>Última actualización:</strong> 16 de julio de 2026</p>
+    </section>
 
-<p>Última actualización: Junio 2026</p>
+    <section class="section">
+      <h2>Eliminar los datos desde la aplicación</h2>
 
-<p>
-Mi Tarot permite a los usuarios solicitar la eliminación de los datos asociados a su uso de la aplicación.
-</p>
+      <ol class="steps">
+        <li>
+          Abrí <strong>Mi Tarot</strong> e ingresá en
+          <strong>Configuraciones</strong>.
+        </li>
+        <li>
+          Seleccioná la opción <strong>Eliminar cuenta</strong>.
+        </li>
+        <li>
+          Revisá la advertencia y confirmá la eliminación.
+        </li>
+      </ol>
 
-<h2>Datos que pueden eliminarse</h2>
+      <p>
+        Esta acción solicita la eliminación de la cuenta anónima y de los datos
+        asociados en los sistemas de Mi Tarot. También limpia la información
+        local gestionada por la aplicación, como historial, Diario, preferencias,
+        tokens e identificadores.
+      </p>
 
-<ul>
-    <li>Perfil de usuario almacenado en nuestros sistemas.</li>
-    <li>Dirección de correo electrónico asociada (si fue proporcionada).</li>
-    <li>Identificadores técnicos asociados a la cuenta.</li>
-    <li>Registros de lecturas almacenados en nuestros servidores (uso, no contenido).</li>
-    <li>Información relacionada con la suscripción y el uso de la aplicación, cuando corresponda.</li>
-</ul>
+      <div class="notice">
+        <p>
+          <strong>La eliminación no cancela una suscripción de Google Play.</strong>
+          Las suscripciones deben cancelarse por separado desde Google Play.
+        </p>
+      </div>
+    </section>
 
-<h2>Cómo solicitar la eliminación</h2>
+    <section class="section">
+      <h2>Solicitud por correo electrónico</h2>
 
-<p>
-Puedes solicitar la eliminación de tus datos enviando un correo electrónico a:
-</p>
+      <p>
+        Si no podés acceder a la aplicación, podés solicitar la eliminación
+        escribiendo a:
+        <a href="mailto:contacto@mitarot.app">contacto@mitarot.app</a>.
+      </p>
 
-<p>
-<a href="mailto:contacto@mitarot.app">contacto@mitarot.app</a>
-</p>
+      <p>
+        Usá el asunto <strong>“Eliminación de datos”</strong> e incluí la
+        información técnica disponible que permita localizar la cuenta anónima,
+        sin enviar contraseñas ni datos sensibles innecesarios.
+      </p>
 
-<p>
-Incluye en el mensaje cualquier información que ayude a identificar tu cuenta o dispositivo para poder procesar la solicitud.
-</p>
+      <p>
+        Para evitar eliminar información de otra persona, Mi Tarot puede solicitar
+        datos razonables de verificación. Debido a que la cuenta no utiliza nombre
+        y correo como credenciales principales, puede no ser posible localizarla
+        si se perdió el identificador técnico y no existe información suficiente
+        para vincular la solicitud.
+      </p>
+    </section>
 
-<h2>Qué sucede después de la solicitud</h2>
+    <section class="section">
+      <h2>Información alcanzada por la eliminación</h2>
 
-<p>
-Una vez verificada la solicitud, eliminaremos o anonimizaremos los datos asociados de acuerdo con nuestras obligaciones legales y operativas.
-</p>
+      <ul>
+        <li>cuenta técnica anónima y UUID asociado;</li>
+        <li>preferencias vinculadas con la cuenta;</li>
+        <li>contadores y estado funcional conservado por Mi Tarot;</li>
+        <li>lecturas, cartas y resultados almacenados en el backend;</li>
+        <li>historial, Diario, notas y datos locales administrados por la app;</li>
+        <li>tokens, secretos de sesión y preferencias cifradas;</li>
+        <li>recordatorios y programaciones locales relacionados con la cuenta.</li>
+      </ul>
 
-<p>
-Algunos registros técnicos mínimos podrán conservarse cuando sea necesario para cumplir requisitos legales, de seguridad o prevención de fraude.
-</p>
+      <p>
+        El alcance efectivo depende de la versión de la aplicación, las funciones
+        utilizadas y los datos existentes al momento de la solicitud.
+      </p>
+    </section>
 
-<h2>Datos almacenados localmente en el dispositivo</h2>
+    <section class="section">
+      <h2>Información que puede no eliminarse inmediatamente</h2>
 
-<p>
-La aplicación también almacena información localmente en el dispositivo del usuario, como historial de lecturas y preferencias. Es en este lugar donde se almacena el contenido de las consultas, los resultados de las lecturas y las notas personales. Estos datos pueden eliminarse desinstalando la aplicación o utilizando las funciones de limpieza de datos disponibles dentro de la app.
-</p>
+      <p>
+        Algunos datos pueden conservarse durante un período limitado cuando sea
+        necesario para:
+      </p>
 
-<h2>Contacto</h2>
+      <ul>
+        <li>cumplir obligaciones legales, fiscales, contables o regulatorias;</li>
+        <li>prevenir fraude, abuso o incidentes de seguridad;</li>
+        <li>resolver reclamos o ejercer y defender derechos;</li>
+        <li>completar ciclos técnicos de backups y registros residuales;</li>
+        <li>mantener constancia de una solicitud de privacidad.</li>
+      </ul>
 
-<p>
-Si tienes preguntas sobre privacidad o eliminación de datos, puedes escribir a:
-</p>
+      <p>
+        Los datos procesados por Google Play, AdMob, Firebase, proveedores de
+        inteligencia artificial u otras aplicaciones se rigen también por sus
+        propias políticas y mecanismos de eliminación.
+      </p>
+    </section>
 
-<p>
-<a href="mailto:contacto@mitarot.app">contacto@mitarot.app</a>
-</p>
+    <section class="section">
+      <h2>Datos locales, archivos exportados y desinstalación</h2>
 
-<hr>
+      <p>
+        Desinstalar Mi Tarot o borrar sus datos desde Android elimina la información
+        local, pero puede no eliminar automáticamente la información ya transmitida
+        al backend o a terceros. Para solicitar una eliminación integral, utilizá
+        <strong>Eliminar cuenta</strong> antes de desinstalar o enviá una solicitud
+        por correo.
+      </p>
 
-<p>
-© 2026 Mi Tarot — Iterative Paths
-</p>
+      <p>
+        Los PDF, capturas, textos o archivos que la persona haya guardado o
+        compartido fuera de Mi Tarot no se eliminan automáticamente. Deben borrarse
+        desde el dispositivo, la nube o la aplicación receptora correspondiente.
+      </p>
+    </section>
 
+    <section class="section">
+      <h2>Suscripción Premium</h2>
+
+      <p>
+        Eliminar la cuenta, borrar datos o desinstalar la aplicación
+        <strong>no cancela Premium</strong>. Para evitar futuras renovaciones,
+        la suscripción debe cancelarse desde Google Play con la cuenta utilizada
+        para realizar la compra.
+      </p>
+
+      <p>
+        Consultá las condiciones completas en los
+        <a href="terms.html">Términos de Uso</a>.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Más información</h2>
+
+      <p>
+        La descripción completa de categorías de datos, proveedores, conservación,
+        seguridad y derechos se encuentra en la
+        <a href="privacy.html">Política de Privacidad</a>.
+      </p>
+
+      <address>
+        Correo:
+        <a href="mailto:contacto@mitarot.app">contacto@mitarot.app</a><br>
+        Responsable: <strong>Iterative Paths</strong>
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Iterative Paths · Mi Tarot
+  </footer>
 </body>
 </html>
