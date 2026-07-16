@@ -1,0 +1,1419 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Términos de Uso de Mi Tarot. Condiciones aplicables a las lecturas de tarot, inteligencia artificial, anuncios, suscripciones Premium, contenido y uso de la aplicación.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#15111f">
+  <title>Términos de Uso | Mi Tarot</title>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #100d17;
+      --surface: #181321;
+      --surface-soft: #211a2d;
+      --text: #f5f0fa;
+      --muted: #c9bfd3;
+      --accent: #d6b86a;
+      --accent-strong: #eed58d;
+      --border: rgba(255, 255, 255, 0.12);
+      --warning-bg: rgba(214, 184, 106, 0.10);
+      --warning-border: rgba(214, 184, 106, 0.36);
+      --max-width: 960px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top, rgba(101, 70, 141, 0.16), transparent 34rem),
+        var(--bg);
+      color: var(--text);
+      font-family:
+        Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent-strong);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.18em;
+    }
+
+    a:hover,
+    a:focus-visible {
+      color: #fff1b7;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      background: rgba(16, 13, 23, 0.92);
+      backdrop-filter: blur(12px);
+    }
+
+    .header-inner,
+    main,
+    footer {
+      width: min(calc(100% - 2rem), var(--max-width));
+      margin-inline: auto;
+    }
+
+    .header-inner {
+      padding: 1.35rem 0;
+    }
+
+    .brand {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 0.15rem;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .brand strong {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.65rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .brand span {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem 1.25rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    nav a[aria-current="page"] {
+      color: var(--accent-strong);
+    }
+
+    main {
+      padding: 3.5rem 0 5rem;
+    }
+
+    .hero {
+      margin-bottom: 2.5rem;
+    }
+
+    .eyebrow {
+      margin: 0 0 0.5rem;
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.25;
+      text-wrap: balance;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.2rem, 7vw, 4rem);
+      font-weight: 600;
+    }
+
+    h2 {
+      margin: 3.25rem 0 1rem;
+      padding-top: 0.5rem;
+      font-size: clamp(1.55rem, 4vw, 2.15rem);
+      font-weight: 600;
+    }
+
+    h3 {
+      margin: 2rem 0 0.75rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    .updated {
+      margin: 1rem 0 0;
+      color: var(--muted);
+    }
+
+    .notice {
+      margin: 2rem 0;
+      padding: 1rem 1.1rem;
+      border: 1px solid var(--warning-border);
+      border-radius: 0.9rem;
+      background: var(--warning-bg);
+    }
+
+    .notice p {
+      margin: 0;
+    }
+
+    .toc {
+      margin: 2rem 0 3rem;
+      padding: 1.25rem 1.35rem;
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      background: var(--surface);
+    }
+
+    .toc h2 {
+      margin: 0 0 0.75rem;
+      padding: 0;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .toc ol {
+      columns: 2;
+      column-gap: 2.5rem;
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    .toc li {
+      break-inside: avoid;
+      margin: 0.3rem 0;
+    }
+
+    section {
+      scroll-margin-top: 1.25rem;
+    }
+
+    ul,
+    ol {
+      padding-left: 1.35rem;
+    }
+
+    li + li {
+      margin-top: 0.4rem;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 1.25rem 0;
+      border: 1px solid var(--border);
+      border-radius: 0.9rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 720px;
+      background: var(--surface);
+    }
+
+    th,
+    td {
+      padding: 0.85rem 0.9rem;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--text);
+      background: var(--surface-soft);
+      font-size: 0.9rem;
+    }
+
+    td {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .definition {
+      margin: 1rem 0;
+      padding-left: 1rem;
+      border-left: 3px solid var(--accent);
+    }
+
+    address {
+      margin: 1rem 0;
+      padding: 1rem 1.1rem;
+      border: 1px solid var(--border);
+      border-radius: 0.9rem;
+      background: var(--surface);
+      color: var(--muted);
+      font-style: normal;
+    }
+
+    code.placeholder {
+      display: inline;
+      padding: 0.1rem 0.35rem;
+      border-radius: 0.35rem;
+      background: rgba(214, 184, 106, 0.13);
+      color: var(--accent-strong);
+      font-family: inherit;
+      font-weight: 700;
+    }
+
+    footer {
+      padding: 1.5rem 0 3rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .back-to-top {
+      display: inline-block;
+      margin-top: 2.5rem;
+    }
+
+    @media (max-width: 720px) {
+      .toc ol {
+        columns: 1;
+      }
+
+      main {
+        padding-top: 2.5rem;
+      }
+    }
+
+    @media print {
+      :root {
+        color-scheme: light;
+      }
+
+      body {
+        background: #fff;
+        color: #111;
+      }
+
+      header,
+      .toc,
+      .back-to-top {
+        display: none;
+      }
+
+      p,
+      li,
+      td,
+      address {
+        color: #222;
+      }
+
+      strong,
+      h1,
+      h2,
+      h3,
+      th {
+        color: #000;
+      }
+
+      main {
+        width: 100%;
+        padding: 0;
+      }
+
+      a {
+        color: inherit;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header id="inicio">
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="Ir al inicio de Mi Tarot">
+        <strong>Mi Tarot</strong>
+        <span>Reflexión personal y exploración simbólica</span>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <a href="/">Inicio</a>
+        <a href="/terminos/" aria-current="page">Términos</a>
+        <a href="/privacidad/">Privacidad</a>
+        <a href="mailto:contacto@mitarot.app">Soporte</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <div class="hero">
+        <p class="eyebrow">Información legal</p>
+        <h1>Términos de Uso</h1>
+        <p class="updated">
+          <strong>Última actualización:</strong> 16 de julio de 2026
+        </p>
+      </div>
+
+      <!--
+        COMPLETAR Y VERIFICAR ANTES DE PUBLICAR:
+        1. Nombre y apellido del titular.
+        2. CUIT u otra identificación fiscal.
+        3. Domicilio legal completo.
+        4. Confirmar URL definitiva de Términos, Privacidad y Copyright.
+        5. Confirmar beneficios Premium vigentes y límites de uso de IA.
+        6. Confirmar si existen prueba gratuita u ofertas introductorias.
+        7. Confirmar proveedores de IA activos en producción.
+        8. Confirmar funcionamiento final de eliminación de cuenta.
+        9. Implementar registro de versión/aceptación si la abogada lo requiere.
+        10. Someter el texto a revisión profesional antes de producción.
+      -->
+
+      <div class="notice" role="note">
+        <p>
+          <strong>Importante:</strong> Mi Tarot ofrece lecturas simbólicas y contenidos
+          generados mediante inteligencia artificial con fines de entretenimiento,
+          reflexión personal y exploración cultural o espiritual. No predice el futuro
+          con certeza ni reemplaza asesoramiento médico, psicológico, jurídico,
+          financiero o profesional.
+        </p>
+      </div>
+
+      <p>
+        Estos Términos de Uso (los <strong>“Términos”</strong>) regulan el acceso y uso de
+        la aplicación móvil <strong>Mi Tarot</strong>, el sitio web
+        <strong>mitarot.app</strong>, sus APIs, contenidos, suscripciones y servicios
+        relacionados (en conjunto, el <strong>“Servicio”</strong>).
+      </p>
+
+      <p>
+        El Servicio es ofrecido por
+        <strong><code class="placeholder">[NOMBRE Y APELLIDO DEL TITULAR]</code></strong>,
+        bajo el nombre comercial <strong>Iterative Paths</strong>, con domicilio en
+        <code class="placeholder">[DOMICILIO LEGAL COMPLETO, ARGENTINA]</code> y correo
+        electrónico
+        <a href="mailto:contacto@mitarot.app">contacto@mitarot.app</a>
+        (en adelante, <strong>“Mi Tarot”</strong>, <strong>“nosotros”</strong> o el
+        <strong>“Titular”</strong>).
+      </p>
+
+      <nav class="toc" aria-label="Índice de los términos">
+        <h2>Contenido</h2>
+        <ol>
+          <li><a href="#aceptacion">Aceptación</a></li>
+          <li><a href="#titular">Identificación del titular</a></li>
+          <li><a href="#edad">Edad y capacidad</a></li>
+          <li><a href="#servicio">Descripción del Servicio</a></li>
+          <li><a href="#naturaleza">Naturaleza del tarot</a></li>
+          <li><a href="#cuenta">Cuenta anónima</a></li>
+          <li><a href="#funciones-gratuitas">Funciones gratuitas</a></li>
+          <li><a href="#premium">Mi Tarot Premium</a></li>
+          <li><a href="#suscripciones">Suscripciones y renovación</a></li>
+          <li><a href="#cancelacion">Cancelación</a></li>
+          <li><a href="#reembolsos">Reembolsos y revocación</a></li>
+          <li><a href="#promociones">Pruebas y promociones</a></li>
+          <li><a href="#publicidad">Publicidad recompensada</a></li>
+          <li><a href="#ia">Inteligencia artificial</a></li>
+          <li><a href="#crisis">Crisis y emergencias</a></li>
+          <li><a href="#contenido-usuario">Contenido del usuario</a></li>
+          <li><a href="#uso-aceptable">Uso aceptable</a></li>
+          <li><a href="#propiedad">Propiedad intelectual</a></li>
+          <li><a href="#resultados">Derechos sobre resultados</a></li>
+          <li><a href="#exportacion">PDF y uso compartido</a></li>
+          <li><a href="#terceros">Servicios de terceros</a></li>
+          <li><a href="#privacidad">Privacidad</a></li>
+          <li><a href="#disponibilidad">Disponibilidad y cambios</a></li>
+          <li><a href="#actualizaciones">Actualizaciones</a></li>
+          <li><a href="#suspension">Suspensión y terminación</a></li>
+          <li><a href="#garantias">Garantías</a></li>
+          <li><a href="#responsabilidad">Responsabilidad</a></li>
+          <li><a href="#consumidores">Derechos del consumidor</a></li>
+          <li><a href="#ley">Ley y jurisdicción</a></li>
+          <li><a href="#cambios">Cambios a los Términos</a></li>
+          <li><a href="#generales">Disposiciones generales</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ol>
+      </nav>
+
+      <section id="aceptacion">
+        <h2>1. Aceptación de los Términos</h2>
+
+        <p>
+          Al descargar, instalar, abrir, acceder o utilizar el Servicio, la persona
+          usuaria declara que:
+        </p>
+
+        <ul>
+          <li>leyó y comprendió estos Términos;</li>
+          <li>acepta quedar obligada por ellos;</li>
+          <li>leyó la <a href="/privacidad/">Política de Privacidad</a>;</li>
+          <li>tiene capacidad legal para contratar y utilizar el Servicio;</li>
+          <li>cumple la edad mínima indicada en estos Términos.</li>
+        </ul>
+
+        <p>
+          Si la persona no acepta estos Términos, no debe utilizar el Servicio y deberá
+          desinstalar la aplicación.
+        </p>
+
+        <p>
+          Determinadas funciones, compras o cambios sustanciales pueden requerir una
+          aceptación adicional dentro de la aplicación. La utilización continuada del
+          Servicio luego de la entrada en vigor de una actualización constituye aceptación
+          únicamente en la medida permitida por la legislación aplicable.
+        </p>
+      </section>
+
+      <section id="titular">
+        <h2>2. Identificación del titular</h2>
+
+        <address>
+          <strong><code class="placeholder">[NOMBRE Y APELLIDO DEL TITULAR]</code></strong><br>
+          Nombre comercial: Iterative Paths<br>
+          Identificación fiscal:
+          <code class="placeholder">[CUIT U OTRA IDENTIFICACIÓN FISCAL]</code><br>
+          Domicilio:
+          <code class="placeholder">[DOMICILIO, LOCALIDAD, PROVINCIA Y CÓDIGO POSTAL]</code><br>
+          País: República Argentina<br>
+          Correo:
+          <a href="mailto:contacto@mitarot.app">contacto@mitarot.app</a>
+        </address>
+      </section>
+
+      <section id="edad">
+        <h2>3. Edad mínima y capacidad</h2>
+
+        <p>
+          El Servicio está destinado exclusivamente a personas de
+          <strong>18 años o más</strong>. No está autorizado el uso por menores de edad,
+          aun con supervisión o autorización parental.
+        </p>
+
+        <p>
+          La persona usuaria declara tener capacidad legal suficiente para celebrar este
+          acuerdo. Si actúa en nombre de una organización, declara contar con facultades
+          para obligarla, aunque Mi Tarot está diseñado principalmente para uso personal
+          y no profesional.
+        </p>
+
+        <p>
+          Mi Tarot puede solicitar una confirmación de edad o impedir el acceso cuando
+          existan motivos razonables para considerar que este requisito no se cumple.
+        </p>
+      </section>
+
+      <section id="servicio">
+        <h2>4. Descripción del Servicio</h2>
+
+        <p>
+          Mi Tarot es una aplicación de tarot que puede ofrecer, según la versión,
+          dispositivo, región y plan:
+        </p>
+
+        <ul>
+          <li>Carta del Día;</li>
+          <li>lecturas de una o varias cartas;</li>
+          <li>tiradas como Sí o No, Dos Opciones, Relación y otras modalidades;</li>
+          <li>tiradas personalizadas;</li>
+          <li>cartas aclaratorias;</li>
+          <li>interpretaciones manuales o guiadas mediante inteligencia artificial;</li>
+          <li>consulta rápida;</li>
+          <li>Diario e historial de lecturas;</li>
+          <li>notas personales y seguimientos;</li>
+          <li>Compendio de cartas, significados y contenidos educativos;</li>
+          <li>recordatorios y notificaciones;</li>
+          <li>exportación y uso compartido de lecturas;</li>
+          <li>funciones gratuitas, publicitarias y Premium.</li>
+        </ul>
+
+        <p>
+          Algunas funciones necesitan conexión a internet, disponibilidad del backend,
+          acceso a Google Play, anuncios o proveedores de inteligencia artificial.
+          La descripción comercial, pantalla de compra y versión instalada determinan
+          las funciones concretas disponibles en cada momento.
+        </p>
+      </section>
+
+      <section id="naturaleza">
+        <h2>5. Naturaleza del tarot y finalidad del Servicio</h2>
+
+        <p>
+          El tarot es un sistema simbólico sujeto a interpretación. Mi Tarot no afirma
+          que las cartas puedan predecir hechos futuros, revelar información oculta,
+          garantizar resultados ni establecer verdades objetivas sobre una persona o
+          situación.
+        </p>
+
+        <p>
+          El Servicio está destinado a:
+        </p>
+
+        <ul>
+          <li>entretenimiento;</li>
+          <li>reflexión personal;</li>
+          <li>exploración simbólica, cultural o espiritual;</li>
+          <li>registro de pensamientos y experiencias.</li>
+        </ul>
+
+        <p>
+          Las lecturas no deben utilizarse como única base para tomar decisiones sobre
+          salud, tratamientos, seguridad, relaciones, embarazo, empleo, dinero,
+          inversiones, deudas, contratos, litigios, delitos, migración o cualquier otro
+          asunto de consecuencias relevantes.
+        </p>
+      </section>
+
+      <section id="cuenta">
+        <h2>6. Cuenta técnica anónima</h2>
+
+        <p>
+          Mi Tarot no exige una cuenta tradicional con nombre, correo y contraseña para
+          utilizar sus funciones principales. La aplicación puede crear una cuenta
+          técnica anónima asociada a un identificador UUID y a credenciales de sesión.
+        </p>
+
+        <p>
+          La persona usuaria es responsable de:
+        </p>
+
+        <ul>
+          <li>mantener el control físico y lógico de su dispositivo;</li>
+          <li>no compartir tokens, secretos o identificadores técnicos;</li>
+          <li>mantener actualizado el sistema operativo;</li>
+          <li>proteger las copias o PDF que exporte;</li>
+          <li>informar incidentes de seguridad conocidos.</li>
+        </ul>
+
+        <p>
+          El historial local puede perderse al desinstalar, borrar datos, cambiar de
+          dispositivo o eliminar la cuenta. La aplicación no garantiza recuperación,
+          sincronización ni copia de seguridad de todo el contenido.
+        </p>
+      </section>
+
+      <section id="funciones-gratuitas">
+        <h2>7. Funciones gratuitas</h2>
+
+        <p>
+          Mi Tarot puede ofrecer funciones gratuitas sin pago previo. Algunas
+          interpretaciones guiadas pueden requerir la visualización completa de un
+          anuncio recompensado o estar sujetas a límites de frecuencia, disponibilidad,
+          capacidad técnica o políticas de uso razonable.
+        </p>
+
+        <p>
+          Las funciones gratuitas pueden modificarse, limitarse, reemplazarse o
+          discontinuarse, siempre respetando la información ofrecida, los derechos
+          adquiridos y la normativa de consumo aplicable.
+        </p>
+      </section>
+
+      <section id="premium">
+        <h2>8. Mi Tarot Premium</h2>
+
+        <p>
+          Mi Tarot puede ofrecer una suscripción Premium mensual, anual u otros planes
+          informados en Google Play. Los beneficios vigentes se muestran antes de
+          confirmar la compra y pueden incluir:
+        </p>
+
+        <ul>
+          <li>acceso a interpretaciones guiadas sin completar un anuncio por cada lectura;</li>
+          <li>acceso a tiradas o herramientas exclusivas, incluida la tirada personalizada;</li>
+          <li>modalidades, estilos o controles avanzados de interpretación;</li>
+          <li>funciones ampliadas del Diario o del historial;</li>
+          <li>otros beneficios identificados expresamente como Premium.</li>
+        </ul>
+
+        <p>
+          Premium no garantiza uso ilimitado de infraestructura de inteligencia artificial.
+          Pueden existir límites razonables de uso, seguridad, velocidad o capacidad,
+          informados en la aplicación o aplicados para prevenir abuso y mantener la
+          disponibilidad del Servicio.
+        </p>
+
+        <p>
+          Mi Tarot no debe reducir de forma engañosa beneficios esenciales ya abonados
+          durante un período vigente. No obstante, puede modificar el diseño, los modelos
+          de IA, las tiradas, la forma de acceso o funciones equivalentes cuando resulte
+          necesario por razones técnicas, legales, de seguridad o mejora del producto.
+        </p>
+      </section>
+
+      <section id="suscripciones">
+        <h2>9. Suscripciones, cobro y renovación automática</h2>
+
+        <p>
+          Las compras se procesan mediante Google Play. Antes de confirmar, Google Play
+          muestra el plan, precio, moneda, impuestos aplicables, período de facturación,
+          existencia de prueba u oferta, y condiciones de renovación.
+        </p>
+
+        <p>
+          Salvo que la pantalla de compra indique expresamente lo contrario, una
+          suscripción:
+        </p>
+
+        <ul>
+          <li>se renueva automáticamente por períodos equivalentes;</li>
+          <li>se cobra mediante el método asociado a la cuenta de Google;</li>
+          <li>continúa hasta que sea cancelada;</li>
+          <li>puede quedar sujeta a períodos de gracia, recuperación de pago o suspensión;</li>
+          <li>queda vinculada a la cuenta de Google utilizada para comprar.</li>
+        </ul>
+
+        <p>
+          La persona autoriza a Google Play a realizar los cobros conforme a la pantalla
+          de compra y sus condiciones. Mi Tarot no recibe el número completo de tarjeta ni
+          las credenciales bancarias.
+        </p>
+
+        <p>
+          Los precios pueden variar por país, moneda, impuestos, plan o cambios futuros.
+          El precio válido es el informado por Google Play antes de la confirmación.
+          Cuando corresponda, Google Play notificará cambios de precio y solicitará las
+          acciones exigidas por la plataforma o por la legislación aplicable.
+        </p>
+      </section>
+
+      <section id="cancelacion">
+        <h2>10. Cancelación de la suscripción</h2>
+
+        <p>
+          La suscripción debe administrarse y cancelarse desde Google Play, utilizando la
+          misma cuenta de Google con la que se realizó la compra.
+        </p>
+
+        <p>
+          En términos generales, la cancelación detiene la renovación futura y el acceso
+          Premium continúa hasta finalizar el período ya abonado, salvo reembolso,
+          revocación, fraude, incumplimiento, prueba gratuita u otra regla informada por
+          Google Play o exigida por ley.
+        </p>
+
+        <p>
+          <strong>
+            Desinstalar Mi Tarot, borrar sus datos, eliminar la cuenta anónima o dejar de
+            utilizarla no cancela automáticamente la suscripción.
+          </strong>
+        </p>
+
+        <p>
+          De igual manera, cancelar la suscripción no elimina automáticamente las
+          lecturas, notas, archivos ni datos de la cuenta. La eliminación debe gestionarse
+          mediante las opciones de la app o conforme a la
+          <a href="/privacidad/">Política de Privacidad</a>.
+        </p>
+
+        <p>
+          Instrucciones oficiales:
+          <a href="https://support.google.com/googleplay/answer/7018481?hl=es-419"
+             rel="noopener noreferrer">
+            administrar o cancelar una suscripción en Google Play
+          </a>.
+        </p>
+      </section>
+
+      <section id="reembolsos">
+        <h2>11. Reembolsos, revocación y derecho de arrepentimiento</h2>
+
+        <p>
+          Las solicitudes de reembolso de compras realizadas mediante Google Play se
+          gestionan principalmente conforme a las políticas, plazos y procedimientos de
+          Google Play, sin perjuicio de los derechos irrenunciables que correspondan a la
+          persona consumidora.
+        </p>
+
+        <p>
+          Un reembolso puede implicar la revocación inmediata o posterior del acceso
+          Premium. Mi Tarot podrá retirar beneficios cuando Google Play informe que una
+          compra fue reembolsada, revocada, anulada, impugnada, fraudulenta o dejó de ser
+          válida.
+        </p>
+
+        <p>
+          El derecho de revocación o arrepentimiento aplicable a contrataciones a
+          distancia se ejercerá conforme a la legislación de consumo correspondiente, las
+          particularidades del contenido o servicio digital y el canal de pago. Nada en
+          estos Términos limita un derecho que legalmente no pueda ser renunciado.
+        </p>
+
+        <p>
+          Información oficial de Google:
+          <a href="https://support.google.com/googleplay/answer/15574908?hl=es-419"
+             rel="noopener noreferrer">
+            políticas de reembolso de Google Play
+          </a>.
+        </p>
+      </section>
+
+      <section id="promociones">
+        <h2>12. Pruebas gratuitas, descuentos y promociones</h2>
+
+        <p>
+          Mi Tarot puede ofrecer pruebas gratuitas, precios introductorios, descuentos,
+          cupones u ofertas limitadas. Sólo se consideran vigentes cuando aparecen en la
+          pantalla oficial de Google Play o en una comunicación autorizada.
+        </p>
+
+        <p>
+          Una prueba o promoción puede:
+        </p>
+
+        <ul>
+          <li>estar disponible sólo para usuarios elegibles;</li>
+          <li>limitarse a un país, cuenta, dispositivo o período;</li>
+          <li>convertirse en suscripción paga al finalizar;</li>
+          <li>requerir un método de pago válido;</li>
+          <li>tener condiciones adicionales informadas antes de confirmar.</li>
+        </ul>
+
+        <p>
+          La persona debe cancelar antes del momento indicado por Google Play si no desea
+          que una prueba o promoción se convierta en una suscripción paga.
+        </p>
+      </section>
+
+      <section id="publicidad">
+        <h2>13. Publicidad y anuncios recompensados</h2>
+
+        <p>
+          El plan gratuito puede permitir desbloquear una función después de completar
+          un anuncio recompensado administrado por Google AdMob.
+        </p>
+
+        <p>
+          La recompensa se entrega únicamente cuando el proveedor confirma que se
+          cumplieron las condiciones del anuncio. La disponibilidad depende, entre otros
+          factores, de conexión, región, inventario, consentimiento, dispositivo y
+          funcionamiento de servicios externos.
+        </p>
+
+        <p>
+          Mi Tarot no garantiza que siempre exista un anuncio disponible. Si un anuncio
+          falla, se cierra antes de tiempo o el proveedor no confirma la recompensa,
+          la interpretación puede no habilitarse. La aplicación podrá ofrecer reintento,
+          una alternativa razonable o el acceso Premium, pero no está obligada a entregar
+          una recompensa no validada.
+        </p>
+
+        <p>
+          El contenido del anuncio es seleccionado por redes de terceros. Mi Tarot puede
+          aplicar categorías y controles, pero no aprueba ni garantiza cada producto,
+          afirmación o sitio anunciado. Cualquier interacción o contratación con el
+          anunciante se realiza bajo responsabilidad de la persona usuaria y conforme a
+          los términos del tercero.
+        </p>
+      </section>
+
+      <section id="ia">
+        <h2>14. Interpretaciones generadas mediante inteligencia artificial</h2>
+
+        <h3>14.1. Generación automática</h3>
+
+        <p>
+          Determinadas lecturas, tiradas personalizadas, respuestas y textos se generan
+          automáticamente mediante modelos de inteligencia artificial operados por
+          proveedores externos, que pueden incluir Anthropic y DeepSeek.
+        </p>
+
+        <p>
+          La respuesta se basa en la consulta, cartas, orientación, tirada, preferencias
+          y contexto enviados. No existe revisión humana previa de cada resultado.
+        </p>
+
+        <h3>14.2. Posibles errores</h3>
+
+        <p>La inteligencia artificial puede:</p>
+
+        <ul>
+          <li>interpretar incorrectamente una consulta;</li>
+          <li>inventar datos o presentar afirmaciones sin sustento;</li>
+          <li>producir contenido inconsistente, sesgado, repetido u ofensivo;</li>
+          <li>confundir nombres, tiempos, relaciones o situaciones;</li>
+          <li>no detectar correctamente una emergencia o contenido sensible;</li>
+          <li>generar resultados similares para diferentes personas;</li>
+          <li>interrumpirse o fallar antes de completar una lectura.</li>
+        </ul>
+
+        <p>
+          La persona usuaria debe evaluar críticamente cada respuesta y no interpretarla
+          como hecho, diagnóstico, pronóstico, orden ni recomendación profesional.
+        </p>
+
+        <h3>14.3. Modelos y disponibilidad</h3>
+
+        <p>
+          Mi Tarot puede cambiar de proveedor, modelo, versión, prompt, parámetros,
+          controles o arquitectura para mejorar calidad, seguridad, costo o disponibilidad.
+          No se garantiza que una misma consulta produzca siempre la misma respuesta.
+        </p>
+
+        <h3>14.4. Datos ingresados</h3>
+
+        <p>
+          La persona no debe enviar contraseñas, documentos, datos bancarios completos,
+          secretos comerciales, historiales médicos detallados ni información privada de
+          terceros. El tratamiento de consultas y datos por IA se explica en la
+          <a href="/privacidad/">Política de Privacidad</a>.
+        </p>
+      </section>
+
+      <section id="crisis">
+        <h2>15. Crisis, autolesión, violencia y emergencias</h2>
+
+        <p>
+          Mi Tarot puede aplicar filtros automáticos que bloqueen una lectura o muestren
+          recursos de ayuda cuando detecten referencias a autolesión, suicidio, abuso,
+          violencia u otras situaciones críticas.
+        </p>
+
+        <p>
+          Esos filtros:
+        </p>
+
+        <ul>
+          <li>no son infalibles;</li>
+          <li>no brindan diagnóstico;</li>
+          <li>no supervisan a la persona en tiempo real;</li>
+          <li>no contactan automáticamente a emergencias;</li>
+          <li>no sustituyen ayuda humana o profesional.</li>
+        </ul>
+
+        <p>
+          En una emergencia o riesgo inmediato, la persona debe dejar de utilizar la app
+          como fuente de orientación y comunicarse con los servicios de emergencia de su
+          país, una línea de crisis, un profesional o una persona de confianza.
+        </p>
+      </section>
+
+      <section id="contenido-usuario">
+        <h2>16. Contenido proporcionado por la persona usuaria</h2>
+
+        <p>
+          Se considera <strong>“Contenido del Usuario”</strong> toda consulta, título,
+          nota, reflexión, seguimiento, descripción de posiciones, mensaje de soporte u
+          otro texto o archivo proporcionado voluntariamente.
+        </p>
+
+        <p>
+          La persona conserva los derechos que posea sobre su Contenido del Usuario y
+          concede a Mi Tarot una licencia limitada, mundial, no exclusiva, revocable en
+          los términos legalmente aplicables y libre de regalías para:
+        </p>
+
+        <ul>
+          <li>recibir, alojar, cifrar y procesar el contenido;</li>
+          <li>transmitirlo a proveedores necesarios;</li>
+          <li>generar, mostrar y almacenar la lectura solicitada;</li>
+          <li>proteger el Servicio y prevenir abuso;</li>
+          <li>atender soporte y cumplir obligaciones legales.</li>
+        </ul>
+
+        <p>
+          La licencia se limita a operar y proteger el Servicio. No otorga a Mi Tarot el
+          derecho general de vender consultas personales ni publicar notas privadas.
+        </p>
+
+        <p>La persona declara que:</p>
+
+        <ul>
+          <li>tiene derecho a proporcionar el contenido;</li>
+          <li>el contenido no infringe derechos de terceros;</li>
+          <li>no incluye datos de terceros sin fundamento o autorización;</li>
+          <li>no utiliza el Servicio para amenazar, acosar, difamar o cometer ilícitos;</li>
+          <li>comprende que una consulta enviada a IA será procesada por terceros.</li>
+        </ul>
+      </section>
+
+      <section id="uso-aceptable">
+        <h2>17. Uso aceptable y conductas prohibidas</h2>
+
+        <p>La persona no puede:</p>
+
+        <ul>
+          <li>utilizar el Servicio en violación de leyes o derechos de terceros;</li>
+          <li>intentar acceder a sistemas, datos, cuentas o funciones sin autorización;</li>
+          <li>interferir, sobrecargar, atacar o degradar la infraestructura;</li>
+          <li>automatizar consultas, scraping o extracción masiva sin autorización escrita;</li>
+          <li>eludir límites, anuncios, controles Premium, autenticación o seguridad;</li>
+          <li>simular recompensas publicitarias, compras o estados de suscripción;</li>
+          <li>usar dispositivos rooteados, herramientas o modificaciones para cometer fraude;</li>
+          <li>revender, sublicenciar o explotar comercialmente el acceso al Servicio;</li>
+          <li>descompilar, realizar ingeniería inversa o buscar código fuente salvo permiso legal expreso;</li>
+          <li>extraer prompts internos, claves, secretos, bases de datos, textos o imágenes;</li>
+          <li>copiar sistemáticamente el Compendio o reconstruir su base de contenidos;</li>
+          <li>subir malware, código dañino, instrucciones de ataque o contenido ilícito;</li>
+          <li>usar la aplicación para acosar, vigilar o tomar decisiones perjudiciales sobre terceros;</li>
+          <li>presentar resultados de Mi Tarot como diagnóstico, certificación o asesoramiento profesional;</li>
+          <li>eliminar avisos de autoría, marca, licencia o propiedad.</li>
+        </ul>
+
+        <p>
+          Las pruebas de seguridad requieren autorización previa y escrita. Un reporte de
+          vulnerabilidad de buena fe puede enviarse a
+          <a href="mailto:contacto@mitarot.app">contacto@mitarot.app</a>.
+        </p>
+      </section>
+
+      <section id="propiedad">
+        <h2>18. Propiedad intelectual</h2>
+
+        <p>
+          El Servicio y sus componentes pertenecen al Titular o se utilizan bajo licencia,
+          autorización o normas aplicables. Esto incluye, según corresponda:
+        </p>
+
+        <ul>
+          <li>software, código, arquitectura y APIs;</li>
+          <li>nombre Mi Tarot, marca, logo e identidad visual;</li>
+          <li>diseño de interfaz, animaciones y experiencia;</li>
+          <li>textos del Compendio, explicaciones y microcopy;</li>
+          <li>ilustraciones, cartas, reversos, iconos, fondos e imágenes;</li>
+          <li>tiradas, selección, organización y presentación de contenidos;</li>
+          <li>música, sonidos y recursos audiovisuales;</li>
+          <li>plantillas y composición de PDF;</li>
+          <li>prompts, reglas, filtros y estructuras de interpretación;</li>
+          <li>bases de datos y compilaciones protegibles.</li>
+        </ul>
+
+        <p>
+          Ninguna disposición transfiere la titularidad de esos elementos. Se concede
+          únicamente la licencia limitada indicada en estos Términos.
+        </p>
+
+        <p>
+          Determinados componentes pueden pertenecer a terceros, estar sujetos a licencias
+          de código abierto o encontrarse en dominio público. Su inclusión no transfiere
+          derechos adicionales a la persona usuaria.
+        </p>
+
+        <p>
+          Para reclamos relacionados con derechos de autor, marcas u otros derechos de
+          propiedad intelectual, debe indicarse la obra afectada, el elemento concreto,
+          la ubicación, la titularidad invocada y los datos de contacto, escribiendo a
+          <a href="mailto:contacto@mitarot.app">contacto@mitarot.app</a>.
+        </p>
+      </section>
+
+      <section id="resultados">
+        <h2>19. Licencia sobre lecturas y resultados generados</h2>
+
+        <p>
+          Sujeto a estos Términos y a derechos de terceros, Mi Tarot concede a la persona
+          una licencia personal, no exclusiva, no transferible y no sublicenciable para
+          guardar, imprimir y compartir de forma privada o no comercial las lecturas
+          generadas para ella.
+        </p>
+
+        <p>
+          La persona puede compartir capturas, textos o PDF para uso personal siempre que:
+        </p>
+
+        <ul>
+          <li>no extraiga ni redistribuya masivamente los contenidos;</li>
+          <li>no revenda las imágenes, textos, tiradas o el Compendio;</li>
+          <li>no cree una aplicación, mazo, curso, base de datos o producto derivado competitivo;</li>
+          <li>no elimine marcas, créditos o avisos incorporados;</li>
+          <li>no atribuya a Mi Tarot afirmaciones modificadas o engañosas;</li>
+          <li>respete la privacidad y los derechos de terceros.</li>
+        </ul>
+
+        <p>
+          Los resultados de IA pueden no ser exclusivos, originales ni susceptibles de
+          protección jurídica. Otras personas podrían recibir textos similares. Mi Tarot
+          no garantiza titularidad exclusiva ni ausencia de semejanza con obras existentes.
+        </p>
+
+        <p>
+          Cualquier uso comercial de imágenes, textos, Compendio, marca, PDF o lecturas
+          requiere autorización previa y escrita, salvo que una norma o licencia de
+          terceros permita expresamente ese uso.
+        </p>
+      </section>
+
+      <section id="exportacion">
+        <h2>20. Exportación y uso compartido</h2>
+
+        <p>
+          La aplicación puede permitir exportar una lectura en PDF, texto, imagen u otro
+          formato y enviarla mediante aplicaciones externas.
+        </p>
+
+        <p>
+          La persona es responsable de revisar qué información incluye antes de
+          compartirla. Una vez enviada a WhatsApp, correo, nube, redes sociales u otra
+          aplicación, Mi Tarot deja de controlar su almacenamiento, copia, reenvío o
+          eliminación.
+        </p>
+
+        <p>
+          Los archivos exportados pueden no estar cifrados y podrían permanecer en el
+          dispositivo, aplicación receptora, nube, backup o conversación del destinatario.
+        </p>
+      </section>
+
+      <section id="terceros">
+        <h2>21. Servicios, contenido y enlaces de terceros</h2>
+
+        <p>
+          El Servicio depende o puede integrarse con Google Play, Google AdMob, Firebase,
+          proveedores de IA, hosting, bases de datos, CDN, correo y aplicaciones de uso
+          compartido.
+        </p>
+
+        <p>
+          Esos terceros:
+        </p>
+
+        <ul>
+          <li>pueden estar sujetos a sus propios términos y políticas;</li>
+          <li>pueden modificar, suspender o interrumpir sus servicios;</li>
+          <li>pueden procesar datos conforme a la Política de Privacidad;</li>
+          <li>pueden imponer límites, requisitos de cuenta o restricciones geográficas.</li>
+        </ul>
+
+        <p>
+          Mi Tarot no controla los servicios externos y no garantiza su disponibilidad,
+          contenido, seguridad o adecuación. Esto no excluye responsabilidades que
+          legalmente correspondan al Titular por la selección o integración de proveedores.
+        </p>
+      </section>
+
+      <section id="privacidad">
+        <h2>22. Privacidad y protección de datos</h2>
+
+        <p>
+          El tratamiento de datos personales se regula en la
+          <a href="/privacidad/">Política de Privacidad de Mi Tarot</a>, que forma parte
+          complementaria de estos Términos.
+        </p>
+
+        <p>
+          Al utilizar funciones de IA, publicidad, Analytics, compras, soporte o
+          exportación, pueden intervenir proveedores externos. La persona debe leer la
+          Política de Privacidad para conocer qué información se procesa, con qué
+          finalidad, durante cuánto tiempo y cómo ejercer sus derechos.
+        </p>
+      </section>
+
+      <section id="disponibilidad">
+        <h2>23. Disponibilidad, mantenimiento y cambios del Servicio</h2>
+
+        <p>
+          Mi Tarot procura ofrecer un Servicio estable, pero no garantiza disponibilidad
+          continua, inmediata, libre de errores ni compatible con todos los dispositivos.
+        </p>
+
+        <p>El Servicio puede verse afectado por:</p>
+
+        <ul>
+          <li>mantenimiento programado o urgente;</li>
+          <li>errores de software o infraestructura;</li>
+          <li>falta de conexión o restricciones del dispositivo;</li>
+          <li>fallos de Google Play, AdMob, Firebase o proveedores de IA;</li>
+          <li>límites de capacidad, cuotas o prevención de abuso;</li>
+          <li>cambios regulatorios, de seguridad o de proveedores;</li>
+          <li>fuerza mayor o hechos fuera del control razonable.</li>
+        </ul>
+
+        <p>
+          Mi Tarot puede agregar, modificar, reorganizar o retirar funciones. Cuando una
+          modificación afecte materialmente una suscripción vigente, se procurará ofrecer
+          aviso, una función equivalente o la solución exigida por la normativa aplicable.
+        </p>
+      </section>
+
+      <section id="actualizaciones">
+        <h2>24. Actualizaciones y compatibilidad</h2>
+
+        <p>
+          La aplicación puede recibir actualizaciones automáticas o manuales desde
+          Google Play. Algunas actualizaciones pueden ser necesarias para mantener
+          seguridad, compatibilidad, acceso al backend, anuncios, compras o IA.
+        </p>
+
+        <p>
+          Una versión antigua puede dejar de funcionar o perder acceso a determinadas
+          funciones. Mi Tarot no garantiza compatibilidad indefinida con versiones de
+          Android, dispositivos, servicios modificados, dispositivos rooteados o software
+          no oficial.
+        </p>
+      </section>
+
+      <section id="suspension">
+        <h2>25. Suspensión, restricción y terminación</h2>
+
+        <p>
+          Mi Tarot puede limitar, suspender o terminar el acceso cuando exista una razón
+          razonable, por ejemplo:
+        </p>
+
+        <ul>
+          <li>incumplimiento grave o reiterado de estos Términos;</li>
+          <li>fraude, abuso, ataques o elusión de controles;</li>
+          <li>riesgo para usuarios, terceros o infraestructura;</li>
+          <li>compra revocada, fraudulenta o inválida;</li>
+          <li>requerimiento legal o de una plataforma;</li>
+          <li>necesidad técnica urgente.</li>
+        </ul>
+
+        <p>
+          Cuando sea razonable y no comprometa la seguridad, se procurará informar la
+          causa y permitir subsanar el incumplimiento. La suspensión no afecta los
+          derechos que la persona consumidora tenga respecto de períodos abonados,
+          reembolsos o reclamos.
+        </p>
+
+        <p>
+          La persona puede dejar de utilizar el Servicio, eliminar su cuenta y
+          desinstalar la aplicación. La cancelación de Premium debe realizarse
+          separadamente en Google Play.
+        </p>
+      </section>
+
+      <section id="garantias">
+        <h2>26. Alcance de las garantías</h2>
+
+        <p>
+          En la máxima medida permitida por la ley, y sin afectar garantías legales
+          obligatorias, el Servicio se proporciona según su disponibilidad y estado
+          técnico.
+        </p>
+
+        <p>Mi Tarot no garantiza que:</p>
+
+        <ul>
+          <li>una lectura sea correcta, predictiva o aplicable a una situación real;</li>
+          <li>la IA produzca resultados exactos, originales o libres de sesgos;</li>
+          <li>el Servicio esté disponible sin interrupciones;</li>
+          <li>todos los errores puedan corregirse inmediatamente;</li>
+          <li>una lectura guardada pueda recuperarse luego de borrar datos o desinstalar;</li>
+          <li>los anuncios, enlaces o servicios externos sean adecuados;</li>
+          <li>el Servicio satisfaga una expectativa subjetiva o produzca un resultado personal.</li>
+        </ul>
+
+        <p>
+          Ninguna cláusula excluye la garantía legal de prestación adecuada ni los
+          derechos inderogables reconocidos por la normativa de consumo.
+        </p>
+      </section>
+
+      <section id="responsabilidad">
+        <h2>27. Responsabilidad</h2>
+
+        <p>
+          La persona utiliza las lecturas bajo su propio criterio y sigue siendo
+          responsable de sus decisiones, acciones, comunicaciones y relaciones.
+        </p>
+
+        <p>
+          En la medida permitida por la ley, Mi Tarot no responde por daños que deriven
+          exclusivamente de:
+        </p>
+
+        <ul>
+          <li>tomar una lectura como hecho, diagnóstico o consejo profesional;</li>
+          <li>decisiones adoptadas sin verificación o asesoramiento adecuado;</li>
+          <li>información incorrecta, incompleta o ambigua suministrada por la persona;</li>
+          <li>compartir voluntariamente una lectura o PDF con terceros;</li>
+          <li>pérdida local causada por desinstalación, borrado, cambio de dispositivo o falta de copia;</li>
+          <li>uso no autorizado del dispositivo o cuenta de Google;</li>
+          <li>servicios o contenidos de terceros fuera del control razonable de Mi Tarot;</li>
+          <li>uso ilícito, fraudulento o contrario a estos Términos.</li>
+        </ul>
+
+        <p>
+          Cuando corresponda responsabilidad legal del Titular, su alcance se determinará
+          conforme al daño comprobado, la relación causal y las normas aplicables. No se
+          establece un límite monetario artificial que reduzca derechos irrenunciables de
+          la persona consumidora.
+        </p>
+
+        <p>
+          Nada en estos Términos excluye responsabilidad por dolo, culpa grave, daños a la
+          integridad, incumplimiento de obligaciones esenciales o cualquier supuesto que
+          no pueda excluirse legalmente.
+        </p>
+      </section>
+
+      <section id="consumidores">
+        <h2>28. Derechos de consumidores y usuarios</h2>
+
+        <p>
+          Estos Términos constituyen condiciones generales predispuestas para el uso de un
+          servicio digital. Se interpretan de forma compatible con la legislación de
+          defensa del consumidor aplicable.
+        </p>
+
+        <p>
+          Ninguna disposición:
+        </p>
+
+        <ul>
+          <li>implica renuncia a derechos irrenunciables;</li>
+          <li>limita el deber de información clara, cierta y detallada;</li>
+          <li>autoriza cambios retroactivos perjudiciales;</li>
+          <li>excluye garantías o responsabilidades que la ley imponga;</li>
+          <li>impide realizar reclamos ante autoridades o tribunales competentes;</li>
+          <li>obliga a aceptar una jurisdicción inválida para el domicilio del consumidor.</li>
+        </ul>
+
+        <p>
+          En Argentina, las relaciones de consumo se encuentran alcanzadas, entre otras
+          normas, por la Ley 24.240 y el Código Civil y Comercial de la Nación.
+        </p>
+
+        <p>
+          Para iniciar un reclamo de consumo en Argentina puede utilizarse la
+          <a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor"
+             rel="noopener noreferrer">
+            Ventanilla Única Federal de Defensa del Consumidor
+          </a>, sin perjuicio de otras vías disponibles.
+        </p>
+      </section>
+
+      <section id="ley">
+        <h2>29. Ley aplicable y jurisdicción</h2>
+
+        <p>
+          Estos Términos se rigen por las leyes de la República Argentina, sin perjuicio
+          de las normas imperativas y derechos más favorables que resulten aplicables en
+          el lugar de residencia de la persona usuaria.
+        </p>
+
+        <p>
+          Toda controversia se procurará resolver primero mediante contacto de buena fe
+          con Mi Tarot. Si no se alcanza una solución, serán competentes los tribunales o
+          mecanismos de resolución determinados por la legislación aplicable.
+        </p>
+
+        <p>
+          Cuando exista una relación de consumo, esta cláusula no obliga a la persona a
+          litigar en un domicilio distinto del permitido por las normas protectorias.
+        </p>
+      </section>
+
+      <section id="cambios">
+        <h2>30. Cambios a estos Términos</h2>
+
+        <p>
+          Mi Tarot puede actualizar estos Términos para reflejar cambios funcionales,
+          comerciales, técnicos, legales o de seguridad. La versión vigente se publicará
+          en esta página con su fecha de actualización.
+        </p>
+
+        <p>
+          Los cambios sustanciales podrán comunicarse mediante la aplicación, el sitio o
+          un medio razonable. Cuando una modificación requiera aceptación expresa, se
+          solicitará antes de continuar utilizando las funciones afectadas.
+        </p>
+
+        <p>
+          Los cambios no reducirán retroactivamente derechos ya adquiridos respecto de
+          un período Premium abonado, salvo que resulten necesarios por ley, seguridad,
+          fraude o imposibilidad técnica ajena al control razonable del Titular.
+        </p>
+      </section>
+
+      <section id="generales">
+        <h2>31. Disposiciones generales</h2>
+
+        <h3>31.1. Integridad</h3>
+        <p>
+          Estos Términos, la Política de Privacidad, la información de compra de Google
+          Play y las condiciones adicionales mostradas para una función constituyen el
+          acuerdo aplicable al Servicio.
+        </p>
+
+        <h3>31.2. Prevalencia</h3>
+        <p>
+          Si una condición específica de una compra o función contradice estos Términos,
+          prevalece la condición específica para ese aspecto, siempre que sea válida y
+          haya sido informada antes de contratar.
+        </p>
+
+        <h3>31.3. Divisibilidad</h3>
+        <p>
+          Si una cláusula es declarada inválida o inaplicable, se interpretará o limitará
+          en la medida necesaria y el resto continuará vigente, salvo que se frustre la
+          finalidad esencial del acuerdo.
+        </p>
+
+        <h3>31.4. No renuncia</h3>
+        <p>
+          La falta de ejercicio de un derecho no constituye renuncia a ejercerlo
+          posteriormente.
+        </p>
+
+        <h3>31.5. Cesión</h3>
+        <p>
+          La persona no puede transferir su licencia o acceso en perjuicio de la seguridad
+          o de las condiciones de Google Play. El Titular puede transferir el Servicio en
+          una reorganización o venta, informando los cambios relevantes y respetando los
+          derechos aplicables.
+        </p>
+
+        <h3>31.6. Idioma</h3>
+        <p>
+          La versión en español es la versión principal. Si se ofrecen traducciones, se
+          interpretarán de forma coherente con el texto español, salvo que la ley exija
+          otra solución.
+        </p>
+
+        <h3>31.7. Comunicaciones electrónicas</h3>
+        <p>
+          Las comunicaciones legales o funcionales pueden realizarse mediante la
+          aplicación, el sitio web, Google Play o el correo proporcionado voluntariamente
+          en una solicitud de soporte.
+        </p>
+      </section>
+
+      <section id="contacto">
+        <h2>32. Contacto</h2>
+
+        <p>
+          Para consultas sobre estos Términos, soporte, reclamos o notificaciones legales:
+        </p>
+
+        <address>
+          <strong><code class="placeholder">Guillermo Nicolás Schinelli</code></strong><br>
+          Nombre comercial: Iterative Paths<br>
+          Identificación fiscal:
+          <code class="placeholder">CUIT: 20-33196188-5</code><br>
+          Correo:
+          <a href="mailto:contacto@mitarot.app">contacto@mitarot.app</a><br>
+          Domicilio:
+          <code class="placeholder">CP1640, Martínez, Buenos Aires, ARGENTINA]</code>
+        </address>
+      </section>
+
+      <a class="back-to-top" href="#inicio">Volver arriba</a>
+    </article>
+  </main>
+
+  <footer>
+    © 2026 Iterative Paths · Mi Tarot
+  </footer>
+</body>
+</html>
